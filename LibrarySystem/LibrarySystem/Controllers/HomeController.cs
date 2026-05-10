@@ -25,18 +25,18 @@ namespace LibrarySystem.Controllers
 
             var bookDetails = new List<Book>
             {
-                new Book { BookName = "To Kill a Mockingbird", BookAuthor = "Harper Lee", BookType = "Novel", BookYear = "1960" },
-                new Book { BookName = "1984", BookAuthor = "George Orwell", BookType = "Dystopian", BookYear = "1949" }
+                new Book { Name = "To Kill a Mockingbird", Author = "Harper Lee", Category = "Novel", Year = "1960" },
+                new Book { Name = "1984", Author = "George Orwell", Category = "Dystopian", Year = "1949" }
             };
             //return View(bookDetails);
 
             //ViewData
             var bookValue = new Book
             {
-                BookName = "The Great Gatsby",
-                BookAuthor = "F. Scott Fitzgerald",
-                BookType = "Novel",
-                BookYear = "1925"
+                Name = "The Great Gatsby",
+                Author = "F. Scott Fitzgerald",
+                Category = "Novel",
+                Year = "1925"
             };
             ViewData["BookDetails"] = bookValue;
 
