@@ -14,6 +14,7 @@ namespace LibrarySystem.Models
         public string Publication { get; set; }
         public string Category { get; set; }
         public string Edition { get; set; }
+        public string Year { get; set; }
         public int TotalCopies { get; set; }
         public int AvailableCopies { get; set; }
         public string PublishedYear { get; set; }
