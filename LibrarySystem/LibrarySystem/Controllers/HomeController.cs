@@ -1,4 +1,5 @@
 
+using LibrarySystem.Data;
 using LibrarySystem.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
@@ -7,8 +8,36 @@ namespace LibrarySystem.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly ApplicationDbContext _context;
+
+        public HomeController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
         public IActionResult Index()
         {
+            var book = new Book
+            {
+                Name = "The Silent Horizon",
+                Author = "Emily Carter",
+                Publication = "BlueWave Publishing",
+                Category = "Science Fiction",
+                Edition = "3rd Edition",
+                Year = "2024",
+                TotalCopies = 25,
+                AvailableCopies = 18,
+                PublishedYear = "2024",
+                Isbn = "978-1-4028-9462-6",
+                NoOfPages = 412,
+                Status = "Available",
+                CreatedDate = DateTime.Now,
+                CreatedBy = "Admin",
+                ModifiedDate = DateTime.Now,
+                ModifiedBy = "Admin"
+            };
+            _context.Books.Add(book);
+            _context.SaveChanges();
             return View();
         }
 
@@ -22,6 +51,9 @@ namespace LibrarySystem.Controllers
             //    BookType = "Novel", 
             //    BookYear = "1925" }
             //);
+
+            
+
 
             var bookDetails = new List<Book>
             {
@@ -44,7 +76,9 @@ namespace LibrarySystem.Controllers
             ViewBag.BookDetails = bookValue;
 
             TempData.Keep();
-            return View(bookDetails);
+
+            var bookList = _context.Books.ToList();
+            return View(bookList);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

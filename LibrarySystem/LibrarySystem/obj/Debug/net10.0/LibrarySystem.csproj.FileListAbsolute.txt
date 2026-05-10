@@ -525,3 +525,4 @@ C:\Users\swift\OneDrive\Desktop\LmsApplication\LibrarySystem\LibrarySystem\bin\D
 C:\Users\swift\OneDrive\Desktop\LmsApplication\LibrarySystem\LibrarySystem\bin\Debug\net10.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\swift\OneDrive\Desktop\LmsApplication\LibrarySystem\LibrarySystem\bin\Debug\net10.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\swift\OneDrive\Desktop\LmsApplication\LibrarySystem\LibrarySystem\bin\Debug\net10.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\swift\OneDrive\Desktop\LmsApplication\LibrarySystem\LibrarySystem\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
