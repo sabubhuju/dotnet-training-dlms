@@ -9,11 +9,10 @@ namespace LibrarySystem.Controllers
     {
         public IActionResult Index()
         {
-            TempData["data"] = "I'm temprory data to used in subsequent request";
-            return RedirectToAction("Privacy");
+            return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult PassValueFromController()
         {
             
             //var books = new List<Book>();
@@ -46,12 +45,6 @@ namespace LibrarySystem.Controllers
 
             TempData.Keep();
             return View(bookDetails);
-        }
-
-
-        public IActionResult TestView()
-        {
-            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

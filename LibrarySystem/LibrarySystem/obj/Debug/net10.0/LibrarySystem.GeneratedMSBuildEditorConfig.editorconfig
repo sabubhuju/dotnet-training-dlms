@@ -26,12 +26,8 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/swift/OneDrive/Desktop/LmsApplication/LibrarySystem/LibrarySystem/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/swift/OneDrive/Desktop/LmsApplication/LibrarySystem/LibrarySystem/Views/Home/TestView.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUZXN0Vmlldy5jc2h0bWw=
+[C:/Users/swift/OneDrive/Desktop/LmsApplication/LibrarySystem/LibrarySystem/Views/Home/PassValueFromController.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQYXNzVmFsdWVGcm9tQ29udHJvbGxlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/swift/OneDrive/Desktop/LmsApplication/LibrarySystem/LibrarySystem/Views/Shared/Error.cshtml]
