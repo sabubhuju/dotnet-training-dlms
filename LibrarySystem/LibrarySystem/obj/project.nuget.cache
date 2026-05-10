@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "f/nOxh61x+Y=",
+  "dgSpecHash": "j/hI5NTqhbg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\swift\\OneDrive\\Desktop\\LmsApplication\\LibrarySystem\\LibrarySystem\\LibrarySystem.csproj",
+  "projectFilePath": "C:\\Users\\swift\\OneDrive\\Desktop\\LmsApplication\\dotnet-training-dlms\\LibrarySystem\\LibrarySystem\\LibrarySystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\swift\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\swift\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\6.0.0\\microsoft.aspnetcore.mvc.razor.extensions.6.0.0.nupkg.sha512",
