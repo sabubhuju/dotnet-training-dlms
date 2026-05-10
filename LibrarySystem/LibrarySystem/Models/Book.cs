@@ -1,10 +1,30 @@
-﻿namespace LibrarySystem.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace LibrarySystem.Models
 {
     public class Book
     {
-        public string BookName { get; set; }
-        public string BookAuthor { get; set; }
-        public string BookType { get; set; }
-        public string BookYear { get; set; }
+        [Key]
+        public int BookId { get; set; }
+
+        [Required]
+        [MinLength(5)]
+        public string Name { get; set; }
+        public string Author { get; set; }
+        public string Publication { get; set; }
+        public string Category { get; set; }
+        public string Edition { get; set; }
+        public int TotalCopies { get; set; }
+        public int AvailableCopies { get; set; }
+        public string PublishedYear { get; set; }
+        public string Isbn { get; set; }
+        public int NoOfPages { get; set; }
+        public string Status { get; set; }
+        public DateTime CreatedDate { get; set; }
+        public string CreatedBy { get; set; }
+        public DateTime ModifiedDate { get; set; }
+        public string ModifiedBy { get; set; }
     }
 }
+
+
