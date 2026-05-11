@@ -32,11 +32,15 @@ namespace LibrarySystem.Controllers
         {
             if(ModelState.IsValid)
             {
-                return View();
+                if (book.Name != "hello")
+                {
+                    ModelState.AddModelError(string.Empty,"Hello custom error");
+                }
+               
+                return View(book);
             }
             else
             {
-                TempData["Message"] = "Validation Failed";
                 return View(book);
             }
             
