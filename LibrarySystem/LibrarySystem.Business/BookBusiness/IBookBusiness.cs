@@ -4,6 +4,8 @@ namespace LibrarySystem.Business.BookBusiness
 {
     public interface IBookBusiness
     {
-        List<BookDetails> GetBookList();
+        Task<bool> AddBook(BookDetails book);
+        Task<BookDetails> GetBookDetails(int id);
+        Task<List<BookDetails>> GetBookList();
     }
 }
