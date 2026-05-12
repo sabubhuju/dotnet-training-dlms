@@ -1,4 +1,5 @@
-﻿@model List<Book>
+﻿@using LibrarySystem.Shared.BookData
+@model List<BookDetails>
 <h1>Hello Book Index</h1>
 <a asp-controller="Book" asp-action="AddBook" class="btn btn-primary">Add Books</a>
 <div class="table-responsive">
@@ -9,8 +10,6 @@
                 <th>Book Name</th>
                 <th>Book Author</th>
                 <th>Book Publication</th>
-                <th>Book Category</th>
-                <th>Available Copies</th>
             </tr>
         </thead>
         <tbody>
@@ -23,8 +22,6 @@
                         <td>@book.Name</td>
                         <td>@book.Author</td>
                         <td>@book.Publication</td>
-                        <td>@book.Category</td>
-                        <td>@book.AvailableCopies</td>
                     </tr>
                     i++;
                 }

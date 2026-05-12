@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace LibrarySystem.Dtos
+namespace LibrarySystem.Shared.BookData
 {
     public class BookDetails
     {

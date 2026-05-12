@@ -1,4 +1,6 @@
-using LibrarySystem.Data;
+using LibrarySystem.Business.BookBusiness;
+using LibrarySystem.Repository.BookRepository;
+using LibrarySystem.Repository.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,6 +8,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
+
+builder.Services.AddScoped<IBookBusiness, BookBusiness>();
+builder.Services.AddScoped<IBookRepository, BookRepository>();
 
 var connectionString=  builder.Configuration.GetConnectionString("DefaultConnection");
 

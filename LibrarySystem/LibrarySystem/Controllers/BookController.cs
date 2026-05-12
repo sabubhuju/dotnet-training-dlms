@@ -1,23 +1,20 @@
-﻿using LibrarySystem.Data;
-using LibrarySystem.Dtos;
-using LibrarySystem.Models;
+﻿using LibrarySystem.Business.BookBusiness;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace LibrarySystem.Controllers
 {
     public class BookController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly IBookBusiness _bookBusiness;
 
-        public BookController(ApplicationDbContext context)
+        public BookController(IBookBusiness bookBusiness)
         {
-            _context = context;
+            _bookBusiness = bookBusiness;
         }
 
         public IActionResult Index()
         {
-            var bookList = _context.Books.ToList();
+            var bookList = _bookBusiness.GetBookList();
             return View(bookList);
         }
 
@@ -26,24 +23,24 @@ namespace LibrarySystem.Controllers
             return View();
         }
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult AddBook(BookDetails book)
-        {
-            if(ModelState.IsValid)
-            {
-                if (book.Name != "hello")
-                {
-                    ModelState.AddModelError(string.Empty,"Hello custom error");
-                }
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public IActionResult AddBook(BookDetails book)
+        //{
+        //    if(ModelState.IsValid)
+        //    {
+        //        if (book.Name != "hello")
+        //        {
+        //            ModelState.AddModelError("Name","Hello custom error");
+        //        }
                
-                return View(book);
-            }
-            else
-            {
-                return View(book);
-            }
+        //        return View(book);
+        //    }
+        //    else
+        //    {
+        //        return View(book);
+        //    }
             
-        }
+        //}
     }
 }

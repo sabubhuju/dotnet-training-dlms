@@ -1,6 +1,6 @@
-
-using LibrarySystem.Data;
 using LibrarySystem.Models;
+using LibrarySystem.Repository.Data;
+using LibrarySystem.Repository.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 

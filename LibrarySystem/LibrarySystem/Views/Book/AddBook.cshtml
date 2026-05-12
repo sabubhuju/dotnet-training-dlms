@@ -1,4 +1,5 @@
-﻿@model LibrarySystem.Dtos.BookDetails
+﻿@using LibrarySystem.Shared.BookData
+@model BookDetails
 <h1>Add Book</h1>
 <form asp-controller="Book" asp-action="AddBook" method="post">
     <div asp-validation-summary="All" class="text-danger"></div>
@@ -29,7 +30,7 @@
 @{
     await Html.RenderPartialAsync("_ValidationScriptsPartial");
 }
-<script>
+@* <script>
     $(document).ready(function(){
         $("#Name").rules("add", {
             required: true,
@@ -38,5 +39,5 @@
             },
         }); 
     });
-</script>
+</script> *@
 }

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace LibrarySystem.Models
+namespace LibrarySystem.Repository.Models
 {
     public class Book
     {
