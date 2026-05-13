@@ -60,7 +60,7 @@ namespace LibrarySystem.Controllers
         {
             var bookId = Convert.ToInt32(id);
             var bookDetails = await _bookBusiness.GetBookDetails(bookId);
-            return View("AddBook",bookDetails);
+            return View(bookDetails);
         }
 
 
