@@ -34,6 +34,7 @@
   <ItemGroup>
     <ProjectReference Include="..\LibrarySystem.Business\LibrarySystem.Business.csproj" />
     <ProjectReference Include="..\LibrarySystem.Shared\LibrarySystem.Shared.csproj" />
+    <ProjectReference Include="..\LibrarySystem.Repository\LibrarySystem.Repository.csproj" />
   </ItemGroup>
 
 </Project>

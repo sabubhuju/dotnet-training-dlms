@@ -286,3 +286,8 @@ appsettings.json
 
 test.cs
 run_async_tests.cs
+
+
+LibrarySystem/library.db
+LibrarySystem/library.db-shm
+LibrarySystem/library.db-wal
