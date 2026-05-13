@@ -2,7 +2,20 @@
 @model List<BookDetails>
 <h1>Hello Book Index</h1>
 <a asp-controller="Book" asp-action="AddBook" class="btn btn-primary">Add Books</a>
-<span class="text-info">@TempData["Message"]</span>
+
+@{
+    string tempDataMessage = TempData["isSuccess"] as string;
+    if(tempDataMessage == "YES")
+    {
+        <span class="text-success">@TempData["Message"]</span>
+    }
+    else
+    {
+        <span class="text-danger">@TempData["Message"]</span>
+    }
+}
+
+
 <div class="table-responsive">
     <table class="table">
         <thead>

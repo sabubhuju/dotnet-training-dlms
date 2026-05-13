@@ -23,6 +23,11 @@ namespace LibrarySystem.Business.BookBusiness
             return await _bookRepository.AddBook(bookEntity);
         }
 
+        public async Task<bool> EditBooks(BookDetails book)
+        {
+            return await _bookRepository.EditBooks(book);
+        }
+
         public async Task<BookDetails> GetBookDetails(int id)
         {
             var bookData = await _bookRepository.GetBookDetails(id);
